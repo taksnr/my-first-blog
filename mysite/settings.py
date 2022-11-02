@@ -120,6 +120,8 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+#static は重複してはいけない
+#STATIC_ROOTは読み込んだファイルをまとめて出力する先 STATICFILES_DIRSはCSSファイル等を読み込む先 STATIC_URLはブラウザからアクセスするための相対URL
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
